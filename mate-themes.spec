@@ -2,9 +2,9 @@
 %global rel_build 1
 
 # This is needed, because src-url contains branched part of versioning-scheme.
-%global branch 3.22
+%global branch 3.14
 
-%global rel_ver 3.22.4
+%global rel_ver 3.14.4
 
 # Settings used for build from snapshots.
 %{!?rel_build:%global commit 59b3286ac467f19e9bce39783e71836ced239b7b}
@@ -95,12 +95,14 @@ done
 %{_datadir}/themes/BlackMATE/
 %{_datadir}/themes/BlueMenta/
 %{_datadir}/themes/Blue-Submarine/
+%{_datadir}/themes/ContrastHigh/
 %{_datadir}/themes/ContrastHighInverse/
 %{_datadir}/themes/GreenLaguna/
 %{_datadir}/themes/Green-Submarine/
 %{_datadir}/themes/HighContrast/metacity-1/metacity-theme-1.xml
 %{_datadir}/themes/Menta/
 %{_datadir}/themes/TraditionalOk/
+%{_datadir}/themes/TraditionalOkTest/
 %{_datadir}/themes/TraditionalGreen/
 %{_datadir}/themes/Shiny/
 %{_datadir}/icons/ContrastHigh/
@@ -108,6 +110,9 @@ done
 
 
 %changelog
+* Tue Nov 08 2016 Jajauma's Packages <jajauma@yandex.ru> - 3.14.4-1
+- Downgrade source to 3.14.4 for el7
+
 * Wed Oct 26 2016 Wolfgang Ulbrich <chat-to-me@raveit.de> - 3.22.4-1
 - update to 3.23.4 release
 
